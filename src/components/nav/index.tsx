@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
+import Link from "next/link";
 
 export function Nav() {
   useEffect(() => {
@@ -46,9 +47,9 @@ export function Nav() {
   return (
     <div className="fixed w-full z-50">
       <nav className="relative px-4 py-4 flex justify-between items-center bg-black">
-        <a className="text-3xl font-bold leading-none" href="/">
+        <Link className="text-3xl font-bold leading-none" href="/">
           <img src="/logo.png" width={"200px"} />
-        </a>
+        </Link>
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center text-green-600 p-3">
             <svg
@@ -62,9 +63,9 @@ export function Nav() {
         </div>
         <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a className="text-sm text-white hover:text-green-500" href="/">
+            <Link className="text-sm text-white hover:text-green-500" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="text-gray-300">
             <svg
@@ -82,11 +83,11 @@ export function Nav() {
             </svg>
           </li>
           <li>
-            <a
+            <Link
               className="text-sm text-white hover:text-green-500"
               href="/about-us">
               About Us
-            </a>
+            </Link>
           </li>
           <li className="text-gray-300">
             <svg
@@ -104,24 +105,24 @@ export function Nav() {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-white hover:text-green-500" href="#">
+            <Link className="text-sm text-white hover:text-green-500" href="#">
               Services
-            </a>
+            </Link>
           </li>
         </ul>
-        <a
+        <Link
           className="hidden lg:inline-block py-2 px-6 hover:bg-[#72bf80] text-sm text-white font-bold rounded-xl transition duration-200"
           href="/contact">
           Contact
-        </a>
+        </Link>
       </nav>
       <div className="navbar-menu relative z-50 hidden bg-black">
         <div className="navbar-backdrop fixed inset-0 b opacity-25 bg-black"></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black overflow-y-auto">
           <div className="flex items-center mb-8">
-            <a className="mr-auto text-3xl font-bold leading-none" href="/">
+            <Link className="mr-auto text-3xl font-bold leading-none" href="/">
               <img src="/logo.png" width={"200px"} />
-            </a>
+            </Link>
             <button className="navbar-close">
               <svg
                 className="h-6 w-6 text-white cursor-pointer hover:text-green-500"
@@ -140,35 +141,35 @@ export function Nav() {
           <div>
             <ul>
               <li className="mb-1">
-                <a
+                <Link
                   className="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
+                <Link
                   className="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/about-us">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="mb-1">
-                <a
+                <Link
                   className="block p-4 text-sm font-semibold text-white hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="#">
                   Services
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <a
+              <Link
                 className="block px-4 py-3 mb-3 leading-loose text-black text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
                 href="/contact">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

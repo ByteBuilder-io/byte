@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <>
@@ -29,11 +31,11 @@ const Footer = () => {
               <p className="font-semibold text-white">Quick Links</p>
 
               <div className="flex flex-col items-start mt-5 space-y-2">
-                <a
+                <Link
                   href="/"
                   className="transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline">
                   Home
-                </a>
+                </Link>
                 <a
                   href="#"
                   className="transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline">

@@ -10,7 +10,7 @@ export function HeroScreen() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-white">
-              Let's talk about <br />
+              Lets talk about <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
                 Your project.
               </span>

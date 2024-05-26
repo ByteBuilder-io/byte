@@ -262,7 +262,7 @@ const items = [
     title: "Creative Always",
     description: (
       <span className="text-sm">
-        If you have an idea for a software product but aren't sure where to
+        If you have an idea for a software product but arent sure where to
         start, our team can help you define and refine your concept.
       </span>
     ),
@@ -286,7 +286,7 @@ const items = [
     title: "AI-Powered Innovation",
     description: (
       <span className="text-sm">
-        At our company, we're pioneering the future hand in hand with artificial
+        At our company, were pioneering the future hand in hand with artificial
         intelligence (AI).
       </span>
     ),
